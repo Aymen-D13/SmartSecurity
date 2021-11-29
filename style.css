@@ -108,9 +108,8 @@
  	position: relative;
  	background: violet; 
 	box-shadow: 4px 10px 20px rgba(55, 52, 73, .4);
- 	height: 600px;
-	 width: 900px;
- 	min-height: 50vh;
+ 	height: 50%;
+	 width: 60%px;
  	margin: 5% auto;
  }
 
