@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>Smart Security</title>
@@ -12,25 +15,99 @@
 			<a><img src="" alt="logo" height="60"></a>
 		</div>
 		<div class="info">
-			<a href="#about">About</a>
     		<a href="#Portfolio1">product</a>
+    		<a href="#about">About</a>
     		<a href="#contact">Contact me</a>
-		</div>		
+		</div>	
+		<!-- Navbar on small screens -->
 	</div>
+	<div class="minnav">
+  			<a href="#home" class="active1">Logo</a>
+  			<div id="myLinks">
+    			<a href="#product">product</a>
+    			<a href="#about">About</a>
+    			<a href="#contact">Contact me</a>
+  			</div>
+  			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    			<i class="fa fa-bars"></i>
+  			</a>
+		</div>	
 	</nav>
 	<div class="home">
 		<div class="background">
 			<div class="logo2">
-				<img src="4.svg" alt="iii" >
+				<img src="img/4.svg" alt="iii" >
 			</div>
 		</div>
 		<h1>Smart security</h1>
 	</div>
-	   <div class="about" id="about">
+	<div class="product">
+		<h1>Product</h1>
+		<div class="product1">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="img/1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="img/01.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="img/02.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="img/03.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="img/04.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="img/6.jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="img/1.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/01.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/02.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/03.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/04.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="img/6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+    </div>
+  </div>
+</div>
+	</div>
+	<div class="about" id="about">
    		<div class="section2">
    			<h1 class="titre">About us</h1>
    			<div class="logo1">
-   				<img src="2.svg" alt="ff" height="250">
+   				<img src="img/2.svg" alt="ff" >
    			</div>
    			<div class="gg">
    				<p class="titre">fhngnvslnglknfkldgmkd</p>
@@ -38,28 +115,32 @@
 		</div>
     </div>
 	<div class="offer">
-		<div>
+		<div class="offer0">
 			<h1>Partner ship</h1>
 		</div>
-		<ul class="main-nav">
-  			<li class="item1">
-    			<div class="bg"></div>
-  			</li>
-  			<li class="item2">
-    			<div class="bg"></div>
-  			</li>
-  			<li class="item3">
-    			<div class="bg"></div>
-  			</li>
-  			<li class="item4">
-    			<div class="bg"></div>
-  			</li>
-  			<li class="item5">
-    			<div class="bg"></div>
-  			</li>
-		</ul>
+		<div class="offer1">
+			<ul class="main-nav">
+  				<li class="item1">
+    				<div class="bg"></div>
+  				</li>
+  				<li class="item2">
+    				<div class="bg"></div>
+  				</li>
+  				<li class="item3">
+    				<div class="bg"></div>
+  				</li>
+  				<li class="item4">
+    				<div class="bg"></div>
+  				</li>
+  				<li class="item5">
+    				<div class="bg"></div>
+  				</li>
+			</ul>
+		</div>	
 	</div>
-	<div class="container" id="contact">
+	<footer>
+	<div class="contact" id="contact">
+		<h1>Contact me</h1>
         <div class="social-buttons">        
         <!-- facebook  Button -->
                 <a href="http://www.facebook.com" target="blank" class="social-margin"> 
@@ -81,6 +162,18 @@
                 </a>
         </div>
         <p class="foot">Created by Aymen Ammam, 2021</p>
-        </div> 
+    </div>
+</footer>
+        <script src="script.js"></script>
+        <script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
 </body>
 </html>
