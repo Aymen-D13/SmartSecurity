@@ -496,5 +496,6 @@ img {
   .main-nav li {transform: rotate(0deg);}
   .main-nav li {margin:  auto; }
   .contact {margin-top: 200%;}
+  .offer1 .main-nav {width: 60%;}
 }
 
